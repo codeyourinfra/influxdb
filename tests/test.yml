@@ -1,0 +1,12 @@
+---
+- hosts: containers
+  roles:
+    - influxdb
+  tasks:
+    - name: Get InfluxDB version
+      shell: influxd version
+      register: influxdb_version_result
+    - name: Assert InfluxDB version
+      assert:
+        that: influxdb_version_result.stdout_lines[0] | regex_search('^InfluxDB v[\d.]+') != ''
+        msg: "Failure on InfluxDB installation"
