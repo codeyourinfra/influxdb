@@ -20,3 +20,7 @@
     name: influxdb
     state: started
     enabled: yes
+  when: ansible_distribution_release == 'bionic'
+- name: Ensure InfluxDB is running (and enable it at boot)
+  shell: systemctl enable influxdb.service
+  when: ansible_distribution_release == 'xenial'
