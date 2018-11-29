@@ -1,6 +1,6 @@
 # influxdb
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![GitHub release](https://img.shields.io/github/release/codeyourinfra/influxdb.svg)]() [![Build status](https://travis-ci.org/codeyourinfra/influxdb.svg?branch=master)](https://travis-ci.org/codeyourinfra/influxdb)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [![GitHub release](https://img.shields.io/github/release/codeyourinfra/influxdb.svg)](https://github.com/codeyourinfra/influxdb/releases/latest) [![Build status](https://travis-ci.org/codeyourinfra/influxdb.svg?branch=master)](https://travis-ci.org/codeyourinfra/influxdb) [![Ansible Role](https://img.shields.io/ansible/role/29410.svg)](https://galaxy.ansible.com/codeyourinfra/influxdb) [![Ansible Role downloads](https://img.shields.io/ansible/role/d/29410.svg)](https://galaxy.ansible.com/codeyourinfra/influxdb)
 
 Ansible role to install [InfluxDB](https://www.influxdata.com/time-series-platform/influxdb).
 
