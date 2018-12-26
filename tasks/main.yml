@@ -14,7 +14,6 @@
 - name: Install InfluxDB
   apt:
     name: influxdb
-    state: latest
 - name: Ensure InfluxDB is running (and enable it at boot)
   service:
     name: influxdb
@@ -24,3 +23,5 @@
 - name: Ensure InfluxDB is running (and enable it at boot)
   shell: systemctl enable influxdb.service
   when: ansible_distribution_release == 'xenial'
+  changed_when: false
+  tags: skip_ansible_lint
